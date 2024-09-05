@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Car Insurance Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Car Insurance Application Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Address Information</legend>
+
+                <label for="address">Street Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="state">State/Province:</label>
+                <input type="text" id="state" name="state" required>
+
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" name="zip" pattern="[0-9]{5}" required>
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Vehicle Information</legend>
+
+                <label for="make">Car Make:</label>
+                <input type="text" id="make" name="make" required>
+
+                <label for="model">Car Model:</label>
+                <input type="text" id="model" name="model" required>
+
+                <label for="year">Car Year:</label>
+                <input type="number" id="year" name="year" min="1900" max="2024" required>
+
+                <label for="vin">Vehicle Identification Number (VIN):</label>
+                <input type="text" id="vin" name="vin" required>
+
+                <label for="ownership">Ownership Status:</label>
+                <select id="ownership" name="ownership" required>
+                    <option value="">Select Ownership</option>
+                    <option value="owned">Owned</option>
+                    <option value="leased">Leased</option>
+                    <option value="financed">Financed</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Insurance Coverage</legend>
+
+                <label for="coverage-type">Coverage Type:</label>
+                <select id="coverage-type" name="coverage-type" required>
+                    <option value="">Select Coverage</option>
+                    <option value="liability">Liability Only</option>
+                    <option value="full-coverage">Full Coverage</option>
+                    <option value="comprehensive">Comprehensive</option>
+                </select>
+
+                <label for="deductible">Deductible Amount:</label>
+                <input type="number" id="deductible" name="deductible" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Driver Information</legend>
+
+                <label for="license">Driver's License Number:</label>
+                <input type="text" id="license" name="license" required>
+
+                <label for="license-state">Driver's License State:</label>
+                <input type="text" id="license-state" name="license-state" required>
+
+                <label for="years-driving">Years of Driving Experience:</label>
+                <input type="number" id="years-driving" name="years-driving" min="0" required>
+
+                <label for="accidents">Number of Accidents in Last 5 Years:</label>
+                <input type="number" id="accidents" name="accidents" min="0" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Terms and Conditions</legend>
+
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required> I agree to the <a href="#">terms and conditions</a>.
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Submit Application">
+        </form>
+    </div>
+</body>
+</html>
